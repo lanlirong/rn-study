@@ -9,7 +9,9 @@ interface IProps {
 class Home extends React.Component<IProps> {
     onPress = () => {
         const {navigation} = this.props;
-        navigation.navigate("Detail")
+        navigation.navigate("Detail", {
+            id: 100,
+        })
     }
     render(): React.ReactNode {
         return (
